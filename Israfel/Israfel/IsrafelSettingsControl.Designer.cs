@@ -68,7 +68,7 @@
 			this.buttonNewGroup.Name = "buttonNewGroup";
 			this.buttonNewGroup.Size = new System.Drawing.Size(24, 23);
 			this.buttonNewGroup.TabIndex = 0;
-			this.buttonNewGroup.Text = "+Group";
+			this.buttonNewGroup.Text = "+ Group";
 			this.buttonNewGroup.UseVisualStyleBackColor = true;
 			this.buttonNewGroup.Click += new System.EventHandler(this.buttonNewGroup_Click);
 			// 
@@ -79,7 +79,7 @@
 			this.buttonRemoveGroup.Name = "buttonRemoveGroup";
 			this.buttonRemoveGroup.Size = new System.Drawing.Size(24, 23);
 			this.buttonRemoveGroup.TabIndex = 1;
-			this.buttonRemoveGroup.Text = "-Group";
+			this.buttonRemoveGroup.Text = "- Group";
 			this.buttonRemoveGroup.UseVisualStyleBackColor = true;
 			this.buttonRemoveGroup.Click += new System.EventHandler(this.buttonRemoveGroup_Click);
 			// 
