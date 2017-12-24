@@ -85,4 +85,8 @@
     <None Include="Properties\DataSources\ShipGroup.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)$(TargetName).dll" "$(ProjectDir)..\..\output\"
+copy "$(TargetDir)$(TargetName).pdb" "$(ProjectDir)..\..\output\"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
