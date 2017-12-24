@@ -20,6 +20,7 @@ before_build:
     - git.exe submodule update --init --recursive
     - nuget restore Israfel\Israfel.sln
     - nuget restore ElectronicObserverExtended\ElectronicObserver.sln
+    - mkdir ElectronicObserverExtended\output
     - mkdir output
     - ps: (Get-Content Israfel\Israfel\IsrafelPlugin.cs -Encoding UTF8).replace("<BUILD_VERSION>", "$env:APPVEYOR_BUILD_VERSION") | Set-Content Israfel\Israfel\IsrafelPlugin.cs -Encoding UTF8
 
